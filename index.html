@@ -3,12 +3,29 @@
 
 <head>
 	<title>Cardio Fitness Noord</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">	
-	<link rel="stylesheet" href="themes/cfn.min.css" />
-	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
-	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1.0, user-scalable=0" />	
+  <meta name='robots' content='noindex,nofollow' />
+  <link rel='stylesheet' id='jqmobile-theme-css' href='css/jquery.mobile.theme.css' type='text/css' media='all' /> 
+  <!--link rel='stylesheet' id='jqmobile-theme-orange-css' href='css/jquery.mobile.themeOrange.css' type='text/css' media='all' /--> 
+  <script type='text/javascript' src='scripts/jquery.js?ver=1.7.1'></script> 
+  <script type='text/javascript' src='scripts/jquery.mobile-1.0.min.js?ver=1.0'></script>
+  <script type='text/javascript' src='scripts/script.js?ver=1.1'></script>
+  <style type="text/css">
+    .recentcomments a {
+      display: inline !important;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+      .check {
+          float: right;
+          position: relative;
+          margin-right: 0px;
+      }
+      .ui-li .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li {
+          padding-right: 10px !important;
+        }
+  </style>
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
 	<script src="cordova.js"></script>
 	<script>
   		$(function() {
@@ -16,51 +33,232 @@
   		});
   </script>
   </head>
-  <body>
-	<div data-role="page" id="pageone" data-theme="d">
-	  <div data-role="header" data-position="fixed" data-theme="d">
-	    <h1>Welcome To My Homepage</h1>
-	    <div data-role="navbar" data-theme="d">
-	      <ul>
-	        <li><a href="#" class="ui-btn-active">Home</a></li>
-	        <li><a href="#pagetwo">Page Two</a></li>
-	        <li><a href="#pagetwo">Page Tree</a></li>
-	        <li><a href="#pagetwo">Page Four</a></li>
-	      </ul>
-	    </div>
-	  </div>
+<body class="home blog right-sidebar">
+
+     
+  <div data-role="page" id="pageschema" class="pageschema">
+    <div data-role="header" data-position="fixed"> 
+	<img src="images/logo.png" style="float: left; margin: 2px;"><h1 role="heading">Cardio Fitness Noord</h1>
+        <div data-role="navbar">
+      <ul>
+        <li style="background-color: #333; border-color: #111;"><a href="#pageschema" data-transition="slide" data-direction="reverse">Mijn schema</a></li>
+        <li style="background-color: #333; border-color: #111;"><a href="#pagelessions" data-transition="slide">Lessen</a></li>
+        <li style="background-color: #333; border-color: #111;"><a href="#pageopeningstijden" data-transition="slide">Openingstijden</a></li>
+        <li style="background-color: #333; border-color: #111;"><a href="uitloggen.php" data-transition="slide" data-ajax="false">Uitloggen</a></li>
+      </ul>
+    </div>
+    </div>	
 	
-	  <div data-role="main" class="ui-content" data-theme="d">
-	    <p>Welcome! If you click on the link below, it will take you to Page Two.</p>
-	    <a href="#pagetwo">Go to Page Two</a>
-	  </div>
 	
-	  <div data-role="footer" data-position="fixed" data-theme="d">
-	    <h1>Footer Text</h1>
-	  </div>
-	</div> 
 	
-	<div data-role="page" id="pagetwo" data-theme="d">
-	  <div data-role="header" data-position="fixed" data-theme="d">
-	    <h1>Welcome To My Homepage</h1>
-	    <div data-role="navbar" data-theme="d">
-	      <ul>
-	        <li><a href="#" class="ui-btn-active">Home</a></li>
-	        <li><a href="#pagetwo">Page Two</a></li>
-	        <li><a href="#pagetwo">Page Tree</a></li>
-	        <li><a href="#pagetwo">Page Four</a></li>
-	      </ul>
-	    </div>
-	  </div>
-	
-	  <div data-role="main" class="ui-content" data-theme="d">
-	    <p>This is Page Two. If you click on the link below, it will take you to Page One.</p>
-	    <a href="#pageone">Go to Page One</a>
-	  </div>
-	
-	  <div data-role="footer" data-position="fixed" data-theme="d">
-	    <h1>Footer Text</h1>
-	  </div>
-	</div> 
-  </body>
+    <div data-role="content">
+        <select name="day" id="day">
+        <option value="1" selected>Schema 1</option><option value="2">Schema 2</option><option value="3">Schema 3</option><option value="4">Schema 4</option><option value="5">Schema 5</option><option value="6">Schema 6</option><option value="7">Schema 7</option> 
+        </select>
+		
+		<br />
+
+        <ul data-role="listview" data-inset="true">
+           
+            <li data-icon="false">    <a href="#training127" style="padding-left: 65px" data-transition="slide">            <p class="ui-li-aside"><img class="check" data-vink="127" data-id="127" data-toestelid="1" data-pre="" src="images/checkgrey.png" style="margin-left: 20px;"><span style="font-size: 9px;">nr.</span> <span style="font-size: 17px;">1</span></p>      <img src="equipment/CLSC_Lifecycle_Hero.png" style="max-height: 60px; max-width: 60px; margin-right: 0px; margin-top: 5px;"><h3>Fietsen</h3>      <p><strong>11 km</strong></p>      <p><strong>40 minuten</strong></p>      <div><p>ert1</p></div>    </a></li><li data-icon="false">    <a href="#training128" style="padding-left: 65px" data-transition="slide">            <p class="ui-li-aside"><img class="check" data-vink="128" data-id="128" data-toestelid="2" data-pre="" src="images/checkgrey.png" style="margin-left: 20px;"><span style="font-size: 9px;">nr.</span> <span style="font-size: 17px;">2</span></p>      <img src="equipment/CC-Elliptical-Elevation-95Xachieve-hero.png" style="max-height: 60px; max-width: 60px; margin-right: 0px; margin-top: 5px;"><h3>Crosstrainer</h3>      <p><strong>4 km</strong></p>      <div><p>vds</p></div>    </a></li><li data-icon="false">    <a href="#training129" style="padding-left: 65px" data-transition="slide">            <p class="ui-li-aside"><img class="check" data-vink="129" data-id="129" data-toestelid="5" data-pre="" src="images/checkgrey.png" style="margin-left: 20px;"><span style="font-size: 9px;">nr.</span> <span style="font-size: 17px;">5</span></p>      <img src="equipment/Integrity_PowerMill-hero.png" style="max-height: 60px; max-width: 60px; margin-right: 0px; margin-top: 5px;"><h3>Traplopen</h3>      <p><strong>15 minuten</strong></p>      <div><p></p></div>    </a></li><li data-icon="false">    <a href="#training130" style="padding-left: 65px" data-transition="slide">            <p class="ui-li-aside"><img class="check" data-vink="130" data-id="130" data-toestelid="5" data-pre="" src="images/checkgrey.png" style="margin-left: 20px;"><span style="font-size: 9px;">nr.</span> <span style="font-size: 17px;">5</span></p>      <img src="equipment/Integrity_PowerMill-hero.png" style="max-height: 60px; max-width: 60px; margin-right: 0px; margin-top: 5px;"><h3>Traplopen</h3>      <p><strong>1 km</strong></p>      <div><p></p></div>    </a></li><li data-icon="false">    <a href="#training131" style="padding-left: 65px" data-transition="slide">            <p class="ui-li-aside"><img class="check" data-vink="131" data-id="131" data-toestelid="4" data-pre="" src="images/checkgrey.png" style="margin-left: 20px;"><span style="font-size: 9px;">nr.</span> <span style="font-size: 17px;">4</span></p>      <img src="equipment/CLSR_LifeCycle_Hero.png" style="max-height: 60px; max-width: 60px; margin-right: 0px; margin-top: 5px;"><h3>Fietsen (ligfiets)</h3>      <p><strong>2 km</strong></p>      <div><p></p></div>    </a></li><li data-icon="false">    <a href="#training132" style="padding-left: 65px" data-transition="slide">            <p class="ui-li-aside"><img class="check" data-vink="132" data-id="132" data-toestelid="3" data-pre="" src="images/checkgrey.png" style="margin-left: 20px;"><span style="font-size: 9px;">nr.</span> <span style="font-size: 17px;">3</span></p>      <img src="equipment/CC-Treadmill-Elevation-95Tachieve-hero.png" style="max-height: 60px; max-width: 60px; margin-right: 0px; margin-top: 5px;"><h3>Loopband</h3>      <p><strong>3 km</strong></p>      <div><p></p></div>    </a></li><li data-icon="false">    <a href="#training133" style="padding-left: 65px" data-transition="slide">            <p class="ui-li-aside"><img class="check" data-vink="133" data-id="133" data-toestelid="4" data-pre="" src="images/checkgrey.png" style="margin-left: 20px;"><span style="font-size: 9px;">nr.</span> <span style="font-size: 17px;">4</span></p>      <img src="equipment/CLSR_LifeCycle_Hero.png" style="max-height: 60px; max-width: 60px; margin-right: 0px; margin-top: 5px;"><h3>Fietsen (ligfiets)</h3>      <p><strong>3 km</strong></p>      <div><p></p></div>    </a></li><li data-icon="false">    <a href="#training134" style="padding-left: 65px" data-transition="slide">            <p class="ui-li-aside"><img class="check" data-vink="134" data-id="134" data-toestelid="6" data-pre="" src="images/checkgrey.png" style="margin-left: 20px;"><span style="font-size: 9px;">nr.</span> <span style="font-size: 17px;">6</span></p>      <img src="equipment/hack squat.png" style="max-height: 60px; max-width: 60px; margin-right: 0px; margin-top: 5px;"><h3>hack squat</h3>      <div><p></p></div>    </a></li><li data-icon="false">    <a href="#training135" style="padding-left: 65px" data-transition="slide">            <p class="ui-li-aside"><img class="check" data-vink="135" data-id="135" data-toestelid="7" data-pre="" src="images/checkgrey.png" style="margin-left: 20px;"><span style="font-size: 9px;">nr.</span> <span style="font-size: 17px;">7</span></p>      <img src="equipment/G3S70-LegPress.png" style="max-height: 60px; max-width: 60px; margin-right: 0px; margin-top: 5px;"><h3>Leg Press</h3>      <div><p></p></div>    </a></li><li data-icon="false">    <a href="#training136" style="padding-left: 65px" data-transition="slide">            <p class="ui-li-aside"><img class="check" data-vink="136" data-id="136" data-toestelid="6" data-pre="" src="images/checkgrey.png" style="margin-left: 20px;"><span style="font-size: 9px;">nr.</span> <span style="font-size: 17px;">6</span></p>      <img src="equipment/hack squat.png" style="max-height: 60px; max-width: 60px; margin-right: 0px; margin-top: 5px;"><h3>hack squat</h3>      <div><p></p></div>    </a></li><li data-icon="false">    <a href="#training137" style="padding-left: 65px" data-transition="slide">            <p class="ui-li-aside"><img class="check" data-vink="137" data-id="137" data-toestelid="7" data-pre="" src="images/checkgrey.png" style="margin-left: 20px;"><span style="font-size: 9px;">nr.</span> <span style="font-size: 17px;">7</span></p>      <img src="equipment/G3S70-LegPress.png" style="max-height: 60px; max-width: 60px; margin-right: 0px; margin-top: 5px;"><h3>Leg Press</h3>      <div><p></p></div>    </a></li><li data-icon="false">    <a href="#training138" style="padding-left: 65px" data-transition="slide">            <p class="ui-li-aside"><img class="check" data-vink="138" data-id="138" data-toestelid="2" data-pre="" src="images/checkgrey.png" style="margin-left: 20px;"><span style="font-size: 9px;">nr.</span> <span style="font-size: 17px;">2</span></p>      <img src="equipment/CC-Elliptical-Elevation-95Xachieve-hero.png" style="max-height: 60px; max-width: 60px; margin-right: 0px; margin-top: 5px;"><h3>Crosstrainer</h3>      <div><p></p></div>    </a></li><li data-icon="false">    <a href="#training139" style="padding-left: 65px" data-transition="slide">            <p class="ui-li-aside"><img class="check" data-vink="139" data-id="139" data-toestelid="4" data-pre="" src="images/checkgrey.png" style="margin-left: 20px;"><span style="font-size: 9px;">nr.</span> <span style="font-size: 17px;">4</span></p>      <img src="equipment/CLSR_LifeCycle_Hero.png" style="max-height: 60px; max-width: 60px; margin-right: 0px; margin-top: 5px;"><h3>Fietsen (ligfiets)</h3>      <div><p></p></div>    </a></li>
+
+
+
+
+
+             
+	  	  
+	   
+    </div> 
+      </div>
+
+
+    <div data-role="page" class="trainingdetail" id="training127" data-nr="0">                <div data-role="header" data-position="fixed"> 
+	<img src="images/logo.png" style="float: left; margin: 2px;"><h1 role="heading">Cardio Fitness Noord</h1>
+        <div data-role="navbar">
+      <ul>
+        <li style="background-color: #333; border-color: #111;"><a href="#pageschema" data-transition="slide" data-direction="reverse">Mijn schema</a></li>
+        <li style="background-color: #333; border-color: #111;"><a href="#pagelessions" data-transition="slide">Lessen</a></li>
+        <li style="background-color: #333; border-color: #111;"><a href="#pageopeningstijden" data-transition="slide">Openingstijden</a></li>
+        <li style="background-color: #333; border-color: #111;"><a href="uitloggen.php" data-transition="slide" data-ajax="false">Uitloggen</a></li>
+      </ul>
+    </div>
+    </div>                <div data-role="content"><img src="images/BIGcheckgrey.png" class="BIGcheck" data-vink="127" data-id="127" data-toestelid="1" data-pre="BIG" style="float: right; margin-right: -5px; margin-top: -5px; cursor: pointer" /><h2 style="line-height: 1px;">Fietsen</h2><span style="font-size: 11px;">Nr. 1</span><img src="equipment/BIGCLSC_Lifecycle_Hero.png" class="bigimage" /><div class="tekst"><strong>Afstand:</strong>11 km<br /><strong>Tijdssduur:</strong>40 minuten<br /><strong>Opmerkingen:</strong>ert1</div></div>                                </div><div data-role="page" class="trainingdetail" id="training128" data-nr="1">                <div data-role="header" data-position="fixed"> 
+	<img src="images/logo.png" style="float: left; margin: 2px;"><h1 role="heading">Cardio Fitness Noord</h1>
+        <div data-role="navbar">
+      <ul>
+        <li style="background-color: #333; border-color: #111;"><a href="#pageschema" data-transition="slide" data-direction="reverse">Mijn schema</a></li>
+        <li style="background-color: #333; border-color: #111;"><a href="#pagelessions" data-transition="slide">Lessen</a></li>
+        <li style="background-color: #333; border-color: #111;"><a href="#pageopeningstijden" data-transition="slide">Openingstijden</a></li>
+        <li style="background-color: #333; border-color: #111;"><a href="uitloggen.php" data-transition="slide" data-ajax="false">Uitloggen</a></li>
+      </ul>
+    </div>
+    </div>                <div data-role="content"><img src="images/BIGcheckgrey.png" class="BIGcheck" data-vink="128" data-id="128" data-toestelid="2" data-pre="BIG" style="float: right; margin-right: -5px; margin-top: -5px; cursor: pointer" /><h2 style="line-height: 1px;">Crosstrainer</h2><span style="font-size: 11px;">Nr. 2</span><img src="equipment/BIGCC-Elliptical-Elevation-95Xachieve-hero.png" class="bigimage" /><div class="tekst"><strong>Afstand:</strong>4 km<br /><strong>Opmerkingen:</strong>vds</div></div>                                </div><div data-role="page" class="trainingdetail" id="training129" data-nr="2">                <div data-role="header" data-position="fixed"> 
+	<img src="images/logo.png" style="float: left; margin: 2px;"><h1 role="heading">Cardio Fitness Noord</h1>
+        <div data-role="navbar">
+      <ul>
+        <li style="background-color: #333; border-color: #111;"><a href="#pageschema" data-transition="slide" data-direction="reverse">Mijn schema</a></li>
+        <li style="background-color: #333; border-color: #111;"><a href="#pagelessions" data-transition="slide">Lessen</a></li>
+        <li style="background-color: #333; border-color: #111;"><a href="#pageopeningstijden" data-transition="slide">Openingstijden</a></li>
+        <li style="background-color: #333; border-color: #111;"><a href="uitloggen.php" data-transition="slide" data-ajax="false">Uitloggen</a></li>
+      </ul>
+    </div>
+    </div>                <div data-role="content"><img src="images/BIGcheckgrey.png" class="BIGcheck" data-vink="129" data-id="129" data-toestelid="5" data-pre="BIG" style="float: right; margin-right: -5px; margin-top: -5px; cursor: pointer" /><h2 style="line-height: 1px;">Traplopen</h2><span style="font-size: 11px;">Nr. 5</span><img src="equipment/BIGIntegrity_PowerMill-hero.png" class="bigimage" /><div class="tekst"><strong>Tijdssduur:</strong>15 minuten<br /><strong>Opmerkingen:</strong></div></div>                                </div><div data-role="page" class="trainingdetail" id="training130" data-nr="3">                <div data-role="header" data-position="fixed"> 
+	<img src="images/logo.png" style="float: left; margin: 2px;"><h1 role="heading">Cardio Fitness Noord</h1>
+        <div data-role="navbar">
+      <ul>
+        <li style="background-color: #333; border-color: #111;"><a href="#pageschema" data-transition="slide" data-direction="reverse">Mijn schema</a></li>
+        <li style="background-color: #333; border-color: #111;"><a href="#pagelessions" data-transition="slide">Lessen</a></li>
+        <li style="background-color: #333; border-color: #111;"><a href="#pageopeningstijden" data-transition="slide">Openingstijden</a></li>
+        <li style="background-color: #333; border-color: #111;"><a href="uitloggen.php" data-transition="slide" data-ajax="false">Uitloggen</a></li>
+      </ul>
+    </div>
+    </div>                <div data-role="content"><img src="images/BIGcheckgrey.png" class="BIGcheck" data-vink="130" data-id="130" data-toestelid="5" data-pre="BIG" style="float: right; margin-right: -5px; margin-top: -5px; cursor: pointer" /><h2 style="line-height: 1px;">Traplopen</h2><span style="font-size: 11px;">Nr. 5</span><img src="equipment/BIGIntegrity_PowerMill-hero.png" class="bigimage" /><div class="tekst"><strong>Afstand:</strong>1 km<br /><strong>Opmerkingen:</strong></div></div>                                </div><div data-role="page" class="trainingdetail" id="training131" data-nr="4">                <div data-role="header" data-position="fixed"> 
+	<img src="images/logo.png" style="float: left; margin: 2px;"><h1 role="heading">Cardio Fitness Noord</h1>
+        <div data-role="navbar">
+      <ul>
+        <li style="background-color: #333; border-color: #111;"><a href="#pageschema" data-transition="slide" data-direction="reverse">Mijn schema</a></li>
+        <li style="background-color: #333; border-color: #111;"><a href="#pagelessions" data-transition="slide">Lessen</a></li>
+        <li style="background-color: #333; border-color: #111;"><a href="#pageopeningstijden" data-transition="slide">Openingstijden</a></li>
+        <li style="background-color: #333; border-color: #111;"><a href="uitloggen.php" data-transition="slide" data-ajax="false">Uitloggen</a></li>
+      </ul>
+    </div>
+    </div>                <div data-role="content"><img src="images/BIGcheckgrey.png" class="BIGcheck" data-vink="131" data-id="131" data-toestelid="4" data-pre="BIG" style="float: right; margin-right: -5px; margin-top: -5px; cursor: pointer" /><h2 style="line-height: 1px;">Fietsen (ligfiets)</h2><span style="font-size: 11px;">Nr. 4</span><img src="equipment/BIGCLSR_LifeCycle_Hero.png" class="bigimage" /><div class="tekst"><strong>Afstand:</strong>2 km<br /><strong>Opmerkingen:</strong></div></div>                                </div><div data-role="page" class="trainingdetail" id="training132" data-nr="5">                <div data-role="header" data-position="fixed"> 
+	<img src="images/logo.png" style="float: left; margin: 2px;"><h1 role="heading">Cardio Fitness Noord</h1>
+        <div data-role="navbar">
+      <ul>
+        <li style="background-color: #333; border-color: #111;"><a href="#pageschema" data-transition="slide" data-direction="reverse">Mijn schema</a></li>
+        <li style="background-color: #333; border-color: #111;"><a href="#pagelessions" data-transition="slide">Lessen</a></li>
+        <li style="background-color: #333; border-color: #111;"><a href="#pageopeningstijden" data-transition="slide">Openingstijden</a></li>
+        <li style="background-color: #333; border-color: #111;"><a href="uitloggen.php" data-transition="slide" data-ajax="false">Uitloggen</a></li>
+      </ul>
+    </div>
+    </div>                <div data-role="content"><img src="images/BIGcheckgrey.png" class="BIGcheck" data-vink="132" data-id="132" data-toestelid="3" data-pre="BIG" style="float: right; margin-right: -5px; margin-top: -5px; cursor: pointer" /><h2 style="line-height: 1px;">Loopband</h2><span style="font-size: 11px;">Nr. 3</span><img src="equipment/BIGCC-Treadmill-Elevation-95Tachieve-hero.png" class="bigimage" /><div class="tekst"><strong>Afstand:</strong>3 km<br /><strong>Opmerkingen:</strong></div></div>                                </div><div data-role="page" class="trainingdetail" id="training133" data-nr="6">                <div data-role="header" data-position="fixed"> 
+	<img src="images/logo.png" style="float: left; margin: 2px;"><h1 role="heading">Cardio Fitness Noord</h1>
+        <div data-role="navbar">
+      <ul>
+        <li style="background-color: #333; border-color: #111;"><a href="#pageschema" data-transition="slide" data-direction="reverse">Mijn schema</a></li>
+        <li style="background-color: #333; border-color: #111;"><a href="#pagelessions" data-transition="slide">Lessen</a></li>
+        <li style="background-color: #333; border-color: #111;"><a href="#pageopeningstijden" data-transition="slide">Openingstijden</a></li>
+        <li style="background-color: #333; border-color: #111;"><a href="uitloggen.php" data-transition="slide" data-ajax="false">Uitloggen</a></li>
+      </ul>
+    </div>
+    </div>                <div data-role="content"><img src="images/BIGcheckgrey.png" class="BIGcheck" data-vink="133" data-id="133" data-toestelid="4" data-pre="BIG" style="float: right; margin-right: -5px; margin-top: -5px; cursor: pointer" /><h2 style="line-height: 1px;">Fietsen (ligfiets)</h2><span style="font-size: 11px;">Nr. 4</span><img src="equipment/BIGCLSR_LifeCycle_Hero.png" class="bigimage" /><div class="tekst"><strong>Afstand:</strong>3 km<br /><strong>Opmerkingen:</strong></div></div>                                </div><div data-role="page" class="trainingdetail" id="training134" data-nr="7">                <div data-role="header" data-position="fixed"> 
+	<img src="images/logo.png" style="float: left; margin: 2px;"><h1 role="heading">Cardio Fitness Noord</h1>
+        <div data-role="navbar">
+      <ul>
+        <li style="background-color: #333; border-color: #111;"><a href="#pageschema" data-transition="slide" data-direction="reverse">Mijn schema</a></li>
+        <li style="background-color: #333; border-color: #111;"><a href="#pagelessions" data-transition="slide">Lessen</a></li>
+        <li style="background-color: #333; border-color: #111;"><a href="#pageopeningstijden" data-transition="slide">Openingstijden</a></li>
+        <li style="background-color: #333; border-color: #111;"><a href="uitloggen.php" data-transition="slide" data-ajax="false">Uitloggen</a></li>
+      </ul>
+    </div>
+    </div>                <div data-role="content"><img src="images/BIGcheckgrey.png" class="BIGcheck" data-vink="134" data-id="134" data-toestelid="6" data-pre="BIG" style="float: right; margin-right: -5px; margin-top: -5px; cursor: pointer" /><h2 style="line-height: 1px;">hack squat</h2><span style="font-size: 11px;">Nr. 6</span><img src="equipment/BIGhack squat.png" class="bigimage" /><div class="tekst"><strong>Opmerkingen:</strong></div></div>                                </div><div data-role="page" class="trainingdetail" id="training135" data-nr="8">                <div data-role="header" data-position="fixed"> 
+	<img src="images/logo.png" style="float: left; margin: 2px;"><h1 role="heading">Cardio Fitness Noord</h1>
+        <div data-role="navbar">
+      <ul>
+        <li style="background-color: #333; border-color: #111;"><a href="#pageschema" data-transition="slide" data-direction="reverse">Mijn schema</a></li>
+        <li style="background-color: #333; border-color: #111;"><a href="#pagelessions" data-transition="slide">Lessen</a></li>
+        <li style="background-color: #333; border-color: #111;"><a href="#pageopeningstijden" data-transition="slide">Openingstijden</a></li>
+        <li style="background-color: #333; border-color: #111;"><a href="uitloggen.php" data-transition="slide" data-ajax="false">Uitloggen</a></li>
+      </ul>
+    </div>
+    </div>                <div data-role="content"><img src="images/BIGcheckgrey.png" class="BIGcheck" data-vink="135" data-id="135" data-toestelid="7" data-pre="BIG" style="float: right; margin-right: -5px; margin-top: -5px; cursor: pointer" /><h2 style="line-height: 1px;">Leg Press</h2><span style="font-size: 11px;">Nr. 7</span><img src="equipment/BIGG3S70-LegPress.png" class="bigimage" /><div class="tekst"><strong>Opmerkingen:</strong></div></div>                                </div><div data-role="page" class="trainingdetail" id="training136" data-nr="9">                <div data-role="header" data-position="fixed"> 
+	<img src="images/logo.png" style="float: left; margin: 2px;"><h1 role="heading">Cardio Fitness Noord</h1>
+        <div data-role="navbar">
+      <ul>
+        <li style="background-color: #333; border-color: #111;"><a href="#pageschema" data-transition="slide" data-direction="reverse">Mijn schema</a></li>
+        <li style="background-color: #333; border-color: #111;"><a href="#pagelessions" data-transition="slide">Lessen</a></li>
+        <li style="background-color: #333; border-color: #111;"><a href="#pageopeningstijden" data-transition="slide">Openingstijden</a></li>
+        <li style="background-color: #333; border-color: #111;"><a href="uitloggen.php" data-transition="slide" data-ajax="false">Uitloggen</a></li>
+      </ul>
+    </div>
+    </div>                <div data-role="content"><img src="images/BIGcheckgrey.png" class="BIGcheck" data-vink="136" data-id="136" data-toestelid="6" data-pre="BIG" style="float: right; margin-right: -5px; margin-top: -5px; cursor: pointer" /><h2 style="line-height: 1px;">hack squat</h2><span style="font-size: 11px;">Nr. 6</span><img src="equipment/BIGhack squat.png" class="bigimage" /><div class="tekst"><strong>Opmerkingen:</strong></div></div>                                </div><div data-role="page" class="trainingdetail" id="training137" data-nr="10">                <div data-role="header" data-position="fixed"> 
+	<img src="images/logo.png" style="float: left; margin: 2px;"><h1 role="heading">Cardio Fitness Noord</h1>
+        <div data-role="navbar">
+      <ul>
+        <li style="background-color: #333; border-color: #111;"><a href="#pageschema" data-transition="slide" data-direction="reverse">Mijn schema</a></li>
+        <li style="background-color: #333; border-color: #111;"><a href="#pagelessions" data-transition="slide">Lessen</a></li>
+        <li style="background-color: #333; border-color: #111;"><a href="#pageopeningstijden" data-transition="slide">Openingstijden</a></li>
+        <li style="background-color: #333; border-color: #111;"><a href="uitloggen.php" data-transition="slide" data-ajax="false">Uitloggen</a></li>
+      </ul>
+    </div>
+    </div>                <div data-role="content"><img src="images/BIGcheckgrey.png" class="BIGcheck" data-vink="137" data-id="137" data-toestelid="7" data-pre="BIG" style="float: right; margin-right: -5px; margin-top: -5px; cursor: pointer" /><h2 style="line-height: 1px;">Leg Press</h2><span style="font-size: 11px;">Nr. 7</span><img src="equipment/BIGG3S70-LegPress.png" class="bigimage" /><div class="tekst"><strong>Opmerkingen:</strong></div></div>                                </div><div data-role="page" class="trainingdetail" id="training138" data-nr="11">                <div data-role="header" data-position="fixed"> 
+	<img src="images/logo.png" style="float: left; margin: 2px;"><h1 role="heading">Cardio Fitness Noord</h1>
+        <div data-role="navbar">
+      <ul>
+        <li style="background-color: #333; border-color: #111;"><a href="#pageschema" data-transition="slide" data-direction="reverse">Mijn schema</a></li>
+        <li style="background-color: #333; border-color: #111;"><a href="#pagelessions" data-transition="slide">Lessen</a></li>
+        <li style="background-color: #333; border-color: #111;"><a href="#pageopeningstijden" data-transition="slide">Openingstijden</a></li>
+        <li style="background-color: #333; border-color: #111;"><a href="uitloggen.php" data-transition="slide" data-ajax="false">Uitloggen</a></li>
+      </ul>
+    </div>
+    </div>                <div data-role="content"><img src="images/BIGcheckgrey.png" class="BIGcheck" data-vink="138" data-id="138" data-toestelid="2" data-pre="BIG" style="float: right; margin-right: -5px; margin-top: -5px; cursor: pointer" /><h2 style="line-height: 1px;">Crosstrainer</h2><span style="font-size: 11px;">Nr. 2</span><img src="equipment/BIGCC-Elliptical-Elevation-95Xachieve-hero.png" class="bigimage" /><div class="tekst"><strong>Opmerkingen:</strong></div></div>                                </div><div data-role="page" class="trainingdetail" id="training139" data-nr="12">                <div data-role="header" data-position="fixed"> 
+	<img src="images/logo.png" style="float: left; margin: 2px;"><h1 role="heading">Cardio Fitness Noord</h1>
+        <div data-role="navbar">
+      <ul>
+        <li style="background-color: #333; border-color: #111;"><a href="#pageschema" data-transition="slide" data-direction="reverse">Mijn schema</a></li>
+        <li style="background-color: #333; border-color: #111;"><a href="#pagelessions" data-transition="slide">Lessen</a></li>
+        <li style="background-color: #333; border-color: #111;"><a href="#pageopeningstijden" data-transition="slide">Openingstijden</a></li>
+        <li style="background-color: #333; border-color: #111;"><a href="uitloggen.php" data-transition="slide" data-ajax="false">Uitloggen</a></li>
+      </ul>
+    </div>
+    </div>                <div data-role="content"><img src="images/BIGcheckgrey.png" class="BIGcheck" data-vink="139" data-id="139" data-toestelid="4" data-pre="BIG" style="float: right; margin-right: -5px; margin-top: -5px; cursor: pointer" /><h2 style="line-height: 1px;">Fietsen (ligfiets)</h2><span style="font-size: 11px;">Nr. 4</span><img src="equipment/BIGCLSR_LifeCycle_Hero.png" class="bigimage" /><div class="tekst"><strong>Opmerkingen:</strong></div></div>                                </div>
+
+    
+    <div data-role="page" id="pagelessions">
+    <div data-role="header" data-position="fixed"> 
+	<img src="images/logo.png" style="float: left; margin: 2px;"><h1 role="heading">Cardio Fitness Noord</h1>
+        <div data-role="navbar">
+      <ul>
+        <li style="background-color: #333; border-color: #111;"><a href="#pageschema" data-transition="slide" data-direction="reverse">Mijn schema</a></li>
+        <li style="background-color: #333; border-color: #111;"><a href="#pagelessions" data-transition="slide">Lessen</a></li>
+        <li style="background-color: #333; border-color: #111;"><a href="#pageopeningstijden" data-transition="slide">Openingstijden</a></li>
+        <li style="background-color: #333; border-color: #111;"><a href="uitloggen.php" data-transition="slide" data-ajax="false">Uitloggen</a></li>
+      </ul>
+    </div>
+    </div>	
+    <div data-role="content">
+    <ul data-role="listview" data-autodividers="false" data-inset="true">
+        <li data-role="list-divider">Maandag</li><li data-icon="false"><a href="#"><p class="ui-li-aside">09.15 - 10.15</p> Circuittraining</a></li><li data-icon="false"><a href="#"><p class="ui-li-aside">10:00 - 11:00</p> Hatha Yoga</a></li><li data-icon="false"><a href="#"><p class="ui-li-aside">18.00 - 18.55</p> Kinder kickboksen ( 6 t/m 12 jaar )</a></li><li data-icon="false"><a href="#"><p class="ui-li-aside">17.00 - 17.55</p> Kinder judo tuimelen ( 3 t/m 5 jaar )</a></li><li data-icon="false"><a href="#"><p class="ui-li-aside">18.00 - 18.55</p> Body pump</a></li><li data-icon="false"><a href="#"><p class="ui-li-aside">19.00 - 19.55</p> Zumba</a></li><li data-icon="false"><a href="#"><p class="ui-li-aside">20.00 - 20.55</p> Circuittraining</a></li><li data-icon="false"><a href="#"><p class="ui-li-aside">20.00 - 20.55</p> Kickboksen zaktraining</a></li><li data-icon="false"><a href="#"><p class="ui-li-aside">21.00 - 21.55</p> Kickboksen</a></li><li data-role="list-divider">Dinsdag</li><li data-icon="false"><a href="#"><p class="ui-li-aside">09.15 - 10.15</p> Circuittraining</a></li><li data-icon="false"><a href="#"><p class="ui-li-aside">10.30 - 11.30</p> Punch en fun</a></li><li data-icon="false"><a href="#"><p class="ui-li-aside">19.00 - 19.55</p> Zumba</a></li><li data-icon="false"><a href="#"><p class="ui-li-aside">20.00 - 20.55</p> Circuittraining</a></li><li data-icon="false"><a href="#"><p class="ui-li-aside">20.00 - 20.55</p> Spinning</a></li><li data-role="list-divider">Woensdag</li><li data-icon="false"><a href="#"><p class="ui-li-aside">09.15 - 10.15</p> Circuittraining</a></li><li data-icon="false"><a href="#"><p class="ui-li-aside">10.00 - 11.00</p> Hatha Yoga</a></li><li data-icon="false"><a href="#"><p class="ui-li-aside">19.00 - 19.55</p> Body Pump</a></li><li data-icon="false"><a href="#"><p class="ui-li-aside">20.00 - 20.55</p> Circuittraining</a></li><li data-icon="false"><a href="#"><p class="ui-li-aside">20.00 - 20.55</p> Kickboksen zaktraining</a></li><li data-icon="false"><a href="#"><p class="ui-li-aside">21.00 - 21.55</p> Boksen</a></li><li data-role="list-divider">Donderdag</li><li data-icon="false"><a href="#"><p class="ui-li-aside">09.15 - 10.15</p> Circuittraing</a></li><li data-icon="false"><a href="#"><p class="ui-li-aside">10.30 - 11.30</p> Punch en fun</a></li><li data-icon="false"><a href="#"><p class="ui-li-aside">15.00 - 15.55</p> Kinder judo tuimelen ( 3 t/m 5 jaar )</a></li><li data-icon="false"><a href="#"><p class="ui-li-aside">18.00 - 18.55</p> Kinder kickboksen ( 6 t/m 12 jaar )</a></li><li data-icon="false"><a href="#"><p class="ui-li-aside">19.00 - 19.55</p> Zumba</a></li><li data-icon="false"><a href="#"><p class="ui-li-aside">20.00 - 20.55</p> Circuittraining</a></li><li data-icon="false"><a href="#"><p class="ui-li-aside">20.00 - 20.55</p> Spinning</a></li><li data-role="list-divider">Vrijdag</li><li data-icon="false"><a href="#"><p class="ui-li-aside">09.15 - 10.15</p> Circuittraining</a></li><li data-icon="false"><a href="#"><p class="ui-li-aside">10.00 - 11.00</p> Zumba</a></li><li data-icon="false"><a href="#"><p class="ui-li-aside">18.00 - 18.55</p> Virtueel insanity</a></li><li data-icon="false"><a href="#"><p class="ui-li-aside">20.00 - 20.55</p> Circuittraining</a></li><li data-icon="false"><a href="#"><p class="ui-li-aside">20.00 - 20.55</p> Kickboksen zaktraining</a></li><li data-role="list-divider">Zaterdag</li><li data-icon="false"><a href="#"><p class="ui-li-aside">10.00 - 10.55</p> Circuittraining</a></li><li data-icon="false"><a href="#"><p class="ui-li-aside">11.00 - 11.55</p> Kickboksen voor kinderen ( 6 t/m 12 jaar )</a></li><li data-icon="false"><a href="#"><p class="ui-li-aside">12.00 - 12.55</p> Kickboksen zaktraining</a></li><li data-role="list-divider">Zondag</li><li data-icon="false"><a href="#"><p class="ui-li-aside">10.00 - 10.55</p> Hatha Yoga</a></li><li data-icon="false"><a href="#"><p class="ui-li-aside">11.00 - 11.55</p> Spinning</a></li><li data-icon="false"><a href="#"><p class="ui-li-aside">12.00 - 12.55</p> Virtueel insanity</a></li>    </ul>
+    </div>
+    </div>    <div data-role="page" id="pageopeningstijden" class="pageopeningstijden">
+    <div data-role="header" data-position="fixed"> 
+	<img src="images/logo.png" style="float: left; margin: 2px;"><h1 role="heading">Cardio Fitness Noord</h1>
+        <div data-role="navbar">
+      <ul>
+        <li style="background-color: #333; border-color: #111;"><a href="#pageschema" data-transition="slide" data-direction="reverse">Mijn schema</a></li>
+        <li style="background-color: #333; border-color: #111;"><a href="#pagelessions" data-transition="slide">Lessen</a></li>
+        <li style="background-color: #333; border-color: #111;"><a href="#pageopeningstijden" data-transition="slide">Openingstijden</a></li>
+        <li style="background-color: #333; border-color: #111;"><a href="uitloggen.php" data-transition="slide" data-ajax="false">Uitloggen</a></li>
+      </ul>
+    </div>
+    </div>	
+    <div data-role="content">
+<h3 class="dag">Reguliere openingstijden</h3>
+
+        
+<div class="dag"><span>maandag:</span>08:00&nbsp;&nbsp;-&nbsp;&nbsp;22:30</div><div class="dag"><span>dinsdag:</span>08:00&nbsp;&nbsp;-&nbsp;&nbsp;22:30</div><div class="dag"><span>woensdag:</span>08:00&nbsp;&nbsp;-&nbsp;&nbsp;22:30</div><div class="dag"><span>donderdag:</span>08:00&nbsp;&nbsp;-&nbsp;&nbsp;22:30</div><div class="dag"><span>vrijdag:</span>08:00&nbsp;&nbsp;-&nbsp;&nbsp;22:30</div><div class="dag"><span>zaterdag:</span>09:00&nbsp;&nbsp;-&nbsp;&nbsp;18:00</div><div class="dag"><span>zondag:</span>09:00&nbsp;&nbsp;-&nbsp;&nbsp;18:00</div>
+        
+<br />
+<br />
+
+
+<h3 class="dag">Openingstijden feestdagen</h3>
+ 1 januari - Gesloten<br>1e paasdag - Gesloten<br>2e paasdag - Gesloten<br>26 april - Gesloten<br>Hemelvaartsdag - Gesloten<br>1e en 2e Pinksterdag - Gesloten<br>24 december - Gesloten vanaf 17.00 uur<br>1e kerstdag - Gesloten<br>2e kerstdag - Geopend van 9.00 t/m 11 uur<br>31 december - Gesloten vanaf 17.00 uur    </div>
+    </div>
+
+    <div data-role="page" data-dialog="true" id="verlopen">
+      <div data-role="header" style="border-radius: 0px;">
+        <h1>Training</h1>
+      </div>
+
+      <div data-role="main" class="ui-content" style="background: rgb(255, 255, 255); text-shadow: none; color: #666;">
+          Hoe is de training verlopen?
+        <button data-oordeel="3">Goed</button>
+        <button data-oordeel="2">Redelijk</button>
+        <button data-oordeel="1">Matig</button>
+      </div>
+    </div>
+</body>
   </html>
