@@ -18,7 +18,7 @@
 	<preference name="fullscreen" value="false" />
 	<preference name="target-device" value="handset" />
 	
-	<icon src="icon.png" />
+	<icon src="images/logo.png" />
 	<gap:plugin name="org.apache.cordova.vibration" version="0.3.11" /> 
 	<gap:plugin name="com.footprint.cordova.plugin.local-notification" version="0.8.0" /> 
 	<gap:plugin name="nl.genkgo.inappbrowser" version="0.5.0" />
